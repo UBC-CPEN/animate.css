@@ -14,7 +14,7 @@ animateCss.rotateIn = function(e){
             $(this).css('-webkit-transform','rotate('+go+'deg)');
         },
         duration: 700,queue: false, easing: 'linear',
-        complete: function(){ }} 
+        complete: function(){$(e).css('transform-origin','center'); }} 
         );
     }
     });
@@ -37,7 +37,7 @@ animateCss.rotateInDownLeft = function(e){
             $(this).css('-webkit-transform','rotate('+go+'deg)');
         },
         duration: 700,queue: false, easing: 'linear',
-        complete: function(){ }} 
+        complete: function(){$(e).css('transform-origin','center'); }} 
         );
     }
     });
@@ -59,7 +59,7 @@ animateCss.rotateInDownRight = function(e){
             $(this).css('-webkit-transform','rotate('+go+'deg)');
         },
         duration: 700,queue: false, easing: 'linear',
-        complete: function(){}} 
+        complete: function(){$(e).css('transform-origin','center');}} 
         );
     }
     });
@@ -81,7 +81,7 @@ animateCss.rotateInUpLeft = function(e){
             $(this).css('-webkit-transform','rotate('+go+'deg)');
         },
         duration: 700,queue: false, easing: 'linear',
-        complete: function(){ }} 
+        complete: function(){ $(e).css('transform-origin','center');}} 
         );
     }
     });
@@ -103,7 +103,7 @@ animateCss.rotateInUpRight = function(e){
             $(this).css('-webkit-transform','rotate('+go+'deg)');
         },
         duration: 700,queue: false, easing: 'linear',
-        complete: function(){ }} 
+        complete: function(){$(e).css('transform-origin','center'); }} 
         );
     }
     });
