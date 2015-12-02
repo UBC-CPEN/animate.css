@@ -1,20 +1,21 @@
 animateCss.rotateOut = function(e){
     console.log("called");
     $(e).css('transform-origin','center');
-    $(e).fadeOut(700).animate({  asdf: 180 }, {
+    $(e).fadeOut(700).animate({  rotOut: 180 }, {
     step: function(go) {
       $(this).css('-webkit-transform','rotate('+go+'deg)');
     },
     duration: 1000,queue: false, easing: 'swing',
     complete: function(){ 
-        $(e).animate({  asdf: -360 }, {
+        $(e).animate({  rotOut: -360 }, {
         step: function(go) {
             $(this).css('-webkit-transform','rotate('+go+'deg)');
         },
         duration: 0,queue: false, easing: 'linear',
         complete: function(){
             $(e).fadeIn(0);
-            $(e).css('asdf','0');
+            $(e).css('rotOut','0');
+            $(e).css('transform-origin','center');
         }} 
         );
     }
@@ -26,20 +27,21 @@ animateCss.rotateOut = function(e){
 animateCss.rotateOutDownLeft = function(e){
     console.log("called");
     $(e).css('transform-origin','left bottom');
-    $(e).fadeOut(700).animate({  asdf: 45 }, {
+    $(e).fadeOut(700).animate({  rotOut: 45 }, {
     step: function(go) {
       $(this).css('-webkit-transform','rotate('+go+'deg)');
     },
     duration: 1000,queue: false, easing: 'swing',
     complete: function(){ 
-        $(e).animate({  asdf: -360 }, {
+        $(e).animate({  rotOut: -360 }, {
         step: function(go) {
             $(this).css('-webkit-transform','rotate('+go+'deg)');
         },
         duration: 0,queue: false, easing: 'linear',
         complete: function(){
             $(e).fadeIn(0);
-            $(e).css('asdf','0');
+            $(e).css('rotOut','0');
+            $(e).css('transform-origin','center');
         }} 
         );
     }
@@ -47,66 +49,75 @@ animateCss.rotateOutDownLeft = function(e){
 
 }
 
-animateCss.rotateInDownRight = function(e){
+animateCss.rotateOutDownRight = function(e){
     console.log("called");
-    //$(e).css('-webkit-transform', "rotateX(180deg)");
-    $(e).css('transform-origin', 'right bottom');
-    $(e).fadeOut(0).fadeIn(900).animate({  asdf: -315 }, {
+    $(e).css('transform-origin','right bottom');
+    $(e).fadeOut(700).animate({  rotOut: -45 }, {
     step: function(go) {
       $(this).css('-webkit-transform','rotate('+go+'deg)');
     },
-    duration: 10,queue: false, easing: 'linear',
+    duration: 1000,queue: false, easing: 'swing',
     complete: function(){ 
-        $(e).animate({  asdf: -360 }, {
+        $(e).animate({  rotOut: -360 }, {
         step: function(go) {
             $(this).css('-webkit-transform','rotate('+go+'deg)');
         },
-        duration: 700,queue: false, easing: 'linear',
-        complete: function(){ }} 
+        duration: 0,queue: false, easing: 'linear',
+        complete: function(){
+            $(e).fadeIn(0);
+            $(e).css('rotOut','0');
+            $(e).css('transform-origin','center');
+        }} 
         );
     }
     });
 
 }
 
-animateCss.rotateInUpLeft = function(e){
+animateCss.rotateOutUpLeft = function(e){
     console.log("called");
-    //$(e).css('-webkit-transform', "rotateX(180deg)");
-    $(e).css('transform-origin', 'left bottom');
-    $(e).fadeOut(0).fadeIn(900).animate({  asdf: -315 }, {
+    $(e).css('transform-origin','left bottom');
+    $(e).fadeOut(700).animate({  rotOut: -45 }, {
     step: function(go) {
       $(this).css('-webkit-transform','rotate('+go+'deg)');
     },
-    duration: 10,queue: false, easing: 'linear',
+    duration: 1000,queue: false, easing: 'swing',
     complete: function(){ 
-        $(e).animate({  asdf: -360 }, {
+        $(e).animate({  rotOut: -360 }, {
         step: function(go) {
             $(this).css('-webkit-transform','rotate('+go+'deg)');
         },
-        duration: 700,queue: false, easing: 'linear',
-        complete: function(){ }} 
+        duration: 0,queue: false, easing: 'linear',
+        complete: function(){
+            $(e).fadeIn(0);
+            $(e).css('rotOut','0');
+            $(e).css('transform-origin','center');
+        }} 
         );
     }
     });
 
 }
 
-animateCss.rotateInUpRight = function(e){
+animateCss.rotateOutUpRight = function(e){
     console.log("called");
-    //$(e).css('-webkit-transform', "rotateX(180deg)");
-    $(e).css('transform-origin', 'right bottom');
-    $(e).fadeOut(0).fadeIn(900).animate({  asdf: 315 }, {
+    $(e).css('transform-origin','right bottom');
+    $(e).fadeOut(700).animate({  rotOut: 45 }, {
     step: function(go) {
       $(this).css('-webkit-transform','rotate('+go+'deg)');
     },
-    duration: 10,queue: false, easing: 'linear',
+    duration: 1000,queue: false, easing: 'swing',
     complete: function(){ 
-        $(e).animate({  asdf: 360 }, {
+        $(e).animate({  rotOut: -360 }, {
         step: function(go) {
             $(this).css('-webkit-transform','rotate('+go+'deg)');
         },
-        duration: 700,queue: false, easing: 'linear',
-        complete: function(){ }} 
+        duration: 0,queue: false, easing: 'linear',
+        complete: function(){
+            $(e).fadeIn(0);
+            $(e).css('rotOut','0');
+            $(e).css('transform-origin','center');
+        }} 
         );
     }
     });
