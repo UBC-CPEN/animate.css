@@ -114,9 +114,6 @@ animateCss.fade = function (e, val, duration, easing, callback) {
 }
 
 animateCss.toRgb = function (a) {
-    console.log(a);
-    console.log(typeof (a));
-    console.log(a.indexOf("#"));
     if (a.indexOf("#") > -1) {
         var result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(a);
         return {
