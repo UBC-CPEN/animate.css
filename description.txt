@@ -1,0 +1,26 @@
+Description:
+We want to add a feature to detect whether an animation is compatible with the browser and create backup animations in
+JavaScript to run if the CSS animation will not work.
+
+Comparison Suite: sidebyside.html
+
+Recreate animations: each set of animation functions in their own file
+js/attention_seekers.js
+js/bouncing_entrances.js
+js/bouncing_exits.js
+js/fading_entrances.js
+js/fading_exits.js
+js/rotating_entrances.js
+js/rotating_exits.js
+js/sliding_entrances.js
+js/sliding_exits.js
+js/zooming_entrances.js
+js/zooming_exits.js
+
+Implement compatibility detection:
+
+Create alternate transform animation: animateCss.transform()
+js/animate.js
+
+create alternate fade animations: animateCss.fade(), animateCss.toRgb()
+js/animate.js
