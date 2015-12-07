@@ -17,10 +17,13 @@ js/sliding_exits.js
 js/zooming_entrances.js
 js/zooming_exits.js
 
-Implement compatibility detection:
+Implement alternate animation methods and compatability detection:
 
 Create alternate transform animation: animateCss.transform()
 js/animate.js
 
 create alternate fade animations: animateCss.fade(), animateCss.toRgb()
 js/animate.js
+
+
+
