@@ -4,6 +4,7 @@
 `animate.css` is a bunch of cool, fun, and cross-browser animations for you to use in your projects. Great for emphasis, home pages, sliders, and general just-add-water-awesomeness.
 
 ##JS-Fallback
+If you're worreid about browsers not supporting some of the features of CSS3 there are full javascript backups to run in place of the CSS animation
 ###Usage
 1. include jquery
 2. include js/animate.js
